@@ -1,0 +1,20 @@
+.container{
+    padding: 1.5em 2em;
+    background-color: #fff;
+    width: 25em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.06);
+    .header{
+        
+        border-bottom: 3px solid #ff9600;
+        .title{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 25px;
+            padding-bottom: 0.1em;
+        }
+        .about{
+            font-size: 15px;
+            padding-bottom: 0.8em;
+        }
+    }
+}

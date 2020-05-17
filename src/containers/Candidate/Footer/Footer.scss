@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    background-color: #24324a;
+    padding: 3em;
+    min-height: 16.5em;
+    .content{
+        width: 80%;
+        margin: 0em auto;
+        display: flex;
+        justify-content: space-between;
+        .contentLeft{
+            width: 50%;
+            .info{
+                padding: 1em 0;
+                .icon{
+                    margin-right: 1em;
+                }
+                .infoItem{
+                    padding-top: 0.5em;
+                    font-size: 14px;
+                    color: #8a99b3 !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.container{
+    // height: 100%;
+    :global(img){
+        display: inline-block;
+        height: 1em;
+    }
+}

@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin: 0em auto;
+    max-width: 78em;
+    width: 100%;
+    color: #466ec4;
+    font-family: 'Opensans';
+    .timeline{
+        padding: 0 3.5em;
+    }
+    .timer{
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            // font-weight: bold;
+            .title{
+                text-align: center;
+                font-size: 1.8em;
+            }
+            .exam{
+                font-family: "Shincomic";
+                font-size: 1.8em;
+                text-align: center;
+                margin-bottom: 1em;
+            }
+            .time{
+                font-size: 1.5em;
+                border: solid 2px #466ec4;
+                padding: 0.3em 1.5em;
+                border-radius: 10px;
+                text-align: center;
+                margin: 0.5em;
+                max-width: 10em;
+            }
+            .option{
+                font-size: 1.3em ;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+        flex-direction: row;
+        .timeline{
+            width: 20%;
+            padding: 0;
+        }
+        .timer{
+            width: 70%;
+            .content{
+                .title{
+                    font-size: 2.2em;
+                }
+                .exam{
+                    font-size: 2.2em;
+                }
+                .time{
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.logo{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+.container{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: 6em;
+    // color: #466ec4;
+    .time{
+        // position: absolute;
+        width: 70%;
+        margin: 0 auto;
+        color: #466ec4;
+        padding: 0.5em;
+        text-align: center;
+        font-size: 20px;
+        border: solid 2px #466ec4;
+        border-radius: 10px;
+        // top: 0;
+        // left: 0;
+    }
+    .content{
+        background-color: #fafafa;
+        padding: 0.5em 1.5em;
+        margin: 0.5em 0;
+        padding-bottom: 12em;
+        height: 100%;
+        overflow: auto;
+        .mondai{
+            .title{
+                font-size: 18px;
+                margin: 0.5em 0;
+            }
+            .answerList{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                .answer{
+                    text-align: center;
+                    :global(a){
+                        display: block;
+                    }
+                    .index{
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                    .answerItem{
+                        width: 1em;
+                        height: 1em;
+                        min-width: 1em;
+                        border: solid 2px #466ec4;
+                        border-radius: 50%;
+                        margin: 0.3em;
+                        &:hover{
+                            box-shadow: 0 0 1em #466ec4;
+                            cursor: pointer;
+                        }
+                    }
+                    .answerItemChecked{
+                        width: 1em;
+                        height: 1em;
+                        min-width: 1em;
+                        border: solid 2px #466ec4;
+                        border-radius: 50%;
+                        margin: 0.3em;
+                        background-color: #466ec4;
+                        &:hover{
+                            box-shadow: 0 0 1em #466ec4;
+                            cursor: pointer;
+                        }
+                    }
+                    .trueAnswer{
+                        border: solid 2px #0fc90f !important;
+                        // background-color: #00ff00 !important;
+                        &:hover{
+                            box-shadow: 0 0 1em #97ff89 !important;
+                            cursor: pointer;
+                        }
+                    }
+                    .falseAnswer{
+                        border: solid 2px #f82020 !important;
+                        // background-color: #ff2e2e !important;
+                        &:hover{
+                            box-shadow: 0 0 1em #ff8383 !important;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

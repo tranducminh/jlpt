@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    padding:0.3em 0;
+    .title{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+        padding: 0.3em 0;
+    }
+    .input{
+        width: 100%;
+        padding: 1em;
+        border-radius: 10px;
+        outline: none;
+        border: 2px solid #cecece
+    }
+}

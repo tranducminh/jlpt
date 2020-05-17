@@ -1,0 +1,41 @@
+.container{
+    padding: 1em;
+    margin: 0.5em 0;
+    background-color: #ffffff;
+    .content{
+        .sentence{
+            .question{
+                display: flex;
+            }
+            .answer{
+                font-size: 18px;
+            }
+        }
+        .trueSentence{
+            border: 2px solid #00ff00;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            .question{
+                display: flex;
+            }
+            .answer{
+                font-size: 18px;
+                margin-left: 1em;
+            }
+        }
+        .falseSentence{
+            border: 2px solid #ff2e2e;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            .question{
+                display: flex;
+            }
+            .answer{
+                font-size: 18px;
+                margin-left: 1em;
+            }
+        }
+    }
+}

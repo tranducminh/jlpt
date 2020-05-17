@@ -1,0 +1,25 @@
+.container{
+    background: linear-gradient(45deg, #466ec4 0%,#6c91e2 71%,#9db9f5 100%);
+    // background-color: #141f72;
+    font-family: 'Quicksand', sans-serif;
+    color:  #fff;
+    .content{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 1.5em 1em;
+        font-size: 2.5em;
+        .about{
+            font-family: "OpenSans";
+            font-size: 16px;
+            font-weight: lighter;
+            padding: 1em 0;
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        .content{
+            padding: 1.5em 0;
+        }
+    }
+}

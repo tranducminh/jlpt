@@ -1,0 +1,136 @@
+.container{
+    font-family: "Opensans" !important;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1em #cecece;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .content{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 1.5em;
+        a {
+            display: block;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 0;
+            .navIcon {
+                font-size: 1.5em;
+            }
+        }
+        .menu{
+            .optionList{
+                list-style: none;
+                padding-inline-start: 0;
+                border-top: 1px solid #a5a5a5;
+                margin: 0;
+                padding: 0.5em 0;
+                display: flex;
+                justify-content: flex-start;
+                :global(#examOptionBig){
+                    display: none;
+                }
+                // :global(#practiceExam){
+                //     display: none;
+                // }
+                .optionItem{
+                    display: inline;
+                    padding: 0.5em 0.5em;
+                    display: flex;
+                    align-items: center;
+                    :global(.menu-icon){
+                        margin-right: 0.5em;
+                    }
+                    &:hover{
+                        color: #fb236a;
+                        cursor: pointer;
+                    }
+                    &:active{
+                        color: #fb236a;
+                    }
+                    .profile{
+                        display: flex;
+                        .avt{
+                            width: 3.5em;
+                            height: 3.5em;
+                            border-radius: 50%;
+                            background-color: #acacac;
+                            img{
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            :global(#examOptionSmall){
+                font-size: 16px;
+                padding: 1em 0;
+                display: flex;
+                flex-direction: column;
+                .optionItem{
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        .container{
+            .optionList{
+                :global(#practiceExam){
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1025px){
+    .container{
+        .content{
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                .navIcon{
+                    display: none;
+                }
+            }
+            .menu{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                .optionList{
+                    border-top: none;
+                    justify-content: space-around;
+                    width: 40%;
+                    :global(#examOptionBig){
+                        display: block;
+                        :global(.dropdown-menu){
+                            min-width: 13em;
+                            :global(.dropdown-menu-item){
+                                font-size: 14px;
+                                padding: 0.5em 1.5em;
+                                transition: 0.2s;
+                                &:hover{
+                                    color: #fb236a;
+                                    background-color: #fdfdfd;
+                                    padding-left: 2.5em;
+                                }
+                            }
+                        }
+                    }
+                }
+                :global(#examOptionSmall){
+                    display: none;
+                }
+            }
+        }
+    }
+}

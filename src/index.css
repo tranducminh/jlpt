@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Honokamarugo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/font_1_honokamarugo_1.1.ttf");
+}
+@font-face {
+  font-family: "Shincomic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/f910-shin-comic-2.01.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap&subset=vietnamese');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+*::-webkit-scrollbar-track
+{
+	background-color: #ffffff;
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #c0c0c0;
+}
+body {
+  margin: 0;
+  font-family: "OpenSans" !important;
+  font-size: 14px !important;
+  color: #232323 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #fafafa; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

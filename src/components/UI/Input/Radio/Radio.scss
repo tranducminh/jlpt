@@ -1,0 +1,76 @@
+$primary: #225cff;
+$gray: #c8ccd4;
+
+@mixin radio($mainColor: $primary, $textColor: #464646) {
+  .radio {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 15px;
+    color: $textColor;
+    display: flex;
+    .content{
+      font-size: 18px;
+    }
+    .label {
+      position: relative;
+      display: block;
+      float: left;
+      margin-right: 10px;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      border: 2px solid $gray;
+      border-radius: 100%;
+      -webkit-tap-highlight-color: transparent;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: $mainColor;
+        transform: scale(0);
+        transition: all 0.2s ease;
+        opacity: 0.08;
+        pointer-events: none;
+      }
+    }
+    &:hover {
+      .label:after {
+        transform: scale(3.6);
+      }
+    }
+  }
+}
+
+@mixin input($mainColor: $primary) {
+  input[type="radio"]:checked + .label{
+    color: $mainColor;
+    border-color: $mainColor;
+    &:after {
+      transform: scale(1);
+      transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+@include radio();
+@include input();
+.cntr {
+  // position: absolute;
+  // top: calc(50% - 10px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

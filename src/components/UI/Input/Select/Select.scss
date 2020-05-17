@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    padding: 0.6em 0.5em;
+    .content{
+        position: relative;
+        .icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1em;
+        }
+        .text{
+            width: 100%;
+            border-radius: 10px;
+            padding: 1em;
+            font-size: 15px;
+            outline: none;
+            border: 2px solid #cecece;
+            background-color: #ffffff;
+            &:focus{
+                border: solid 1px #74b5ff;
+                box-shadow: 0 0 0.4em #0076fe;
+            }
+        }
+    
+        .select{
+            width: 100%;
+            font-size: 15px;
+            border: solid 1px rgb(209, 209, 209);
+            background-color: #ffffff;
+            overflow: auto;
+            max-height: 10em;
+            .item{
+                width: 100%;
+                padding: 0.5em 1em;
+                font-size: 15px;
+                background-color: #ffffff;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(233, 233, 233);
+                }
+            }
+        }    
+    }
+}

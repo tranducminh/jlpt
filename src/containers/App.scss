@@ -1,0 +1,44 @@
+@mixin button($bgColor, $color, $bdRadius) {
+  background-color: $bgColor;
+  border: solid 2px $bgColor;
+  color: $color;
+  padding: 0.6em 1em;
+  border-radius: $bdRadius;
+  &:hover {
+    cursor: pointer;
+    background-color: $color;
+    border: solid 2px $bgColor;
+    color: $bgColor;
+  }
+}
+:global(.button-pink) {
+  @include button(#fb236a, #fff, 9999em);
+  max-height: 3em;
+}
+:global(.button-search) {
+  font-size: 15px;
+  text-align: center;
+  background-color: #0f36a5;
+  color: #fff;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: #fb236a;
+  }
+}
+:global(.btn_){
+  font-family: 'Opensans';
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.6em 1em;
+  border-radius: 10px;
+  background-color: #466ec4;
+  color: #fff;
+  // font-size: 1.12em !important;
+  margin: 0.5em 0;
+  &:hover{
+    background-color: #5d81e4;
+    cursor: pointer;
+  }
+}

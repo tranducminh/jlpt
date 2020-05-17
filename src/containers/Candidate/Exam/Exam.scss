@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    // float: right;
+    max-width: 100em;
+    margin: 0 auto;
+    margin-top: 6em;
+    overflow: auto;
+    .exam{
+        font-family: "Shincomic";
+        color: #464646;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        .exam{
+            width: 90%;
+            max-width: 100em;
+            margin: 0 auto;
+        }
+    }
+}
