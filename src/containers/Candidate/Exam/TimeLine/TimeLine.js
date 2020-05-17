@@ -10,7 +10,7 @@ class TimeLine extends React.Component {
         }
     }
     componentDidUpdate(prevProps){
-        if(this.props.examInfo && this.props.examInfo != prevProps.examInfo){
+        if(this.props.examInfo && this.props.examInfo !== prevProps.examInfo){
             this.setState({
                 examInfo: this.props.examInfo
             })

@@ -43,6 +43,7 @@ class ResultDetail extends React.Component {
                     displayPart3: true
                 })
                 break;
+            default: break;
         }
     }
 

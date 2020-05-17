@@ -17,7 +17,7 @@ class Profile extends React.Component {
         }
     }
     componentDidUpdate(prevProps) {
-        if(this.props.userInfo && this.props.userInfo != prevProps.userInfo) {
+        if(this.props.userInfo && this.props.userInfo !== prevProps.userInfo) {
             this.setState({
                 userInfo: this.props.userInfo
             })
@@ -49,7 +49,7 @@ class Profile extends React.Component {
     }
 
     onHandleUpdatePassword = () => {
-        if(this.state.newPassword != this.state.re_newPassword){
+        if(this.state.newPassword !== this.state.re_newPassword){
             alert("Mật khẩu nhập lại không trùng khớp");
             return;
         }
@@ -80,7 +80,7 @@ class Profile extends React.Component {
                             ? <div className={styles.profile}>
                                 <div className={styles.avt}>
                                     <div className={styles.img}>
-                                        <img src={this.state.userInfo.avatar}></img>
+                                        {/* <img src={this.state.userInfo.avatar} alt="avatar"></img> */}
                                     </div>
                                     <div className={styles.username}>{this.state.userInfo.fullname}</div>
                                 </div>

@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../../../../store/actions';
-import { convertTime } from '../../../../shared/utility';
 import styles from '../LoginSignup.scss';
 import Menu from '../../Menu/Menu';
 import Footer from '../../Footer/Footer';
 import Input from '../../../../components/UI/Input/Input/Input';
-import PropTypes from 'prop-types';
-
-
 class ForgotPassword extends Component {
     render() {
         return (

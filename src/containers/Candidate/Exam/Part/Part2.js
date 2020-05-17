@@ -29,7 +29,7 @@ class Part2 extends React.Component {
     }
     componentDidUpdate(prevProps) {
         this.updateState(prevProps, "readingSkillMondai");
-        if(this.props.time && this.props.time != prevProps.time) {
+        if(this.props.time && this.props.time !== prevProps.time) {
             this.setState({
                 time: this.props.time * 60 * 1000
             })
@@ -96,7 +96,7 @@ class Part2 extends React.Component {
         let value = target.value;
         let answerIndexList = this.state.answerIndexList;
         _.remove(answerIndexList, answerItem => {
-            return answerItem.index == parseInt(name)
+            return answerItem.index === parseInt(name)
         })
         let temp = _.sortBy([...answerIndexList,
         {
@@ -123,7 +123,7 @@ class Part2 extends React.Component {
     }
     render() {
         return (
-            this.state.displayExam == true
+            this.state.displayExam === true
                 ?
                 <div className={styles.container}>
                     <Modal onComplete={this.onComplete} />

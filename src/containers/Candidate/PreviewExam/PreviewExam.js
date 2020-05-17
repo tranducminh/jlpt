@@ -21,12 +21,12 @@ class Preview extends React.Component {
         this.props.getExamInfo(this.props.match.params.examId)
     }
     componentDidUpdate(prevProps) {
-        if (this.props.examInfo && this.props.examInfo != prevProps.examInfo) {
+        if (this.props.examInfo && this.props.examInfo !== prevProps.examInfo) {
             this.setState({
                 examInfo: this.props.examInfo
             })
         }
-        if (this.props.isError && this.props.isError != prevProps.isError) {
+        if (this.props.isError && this.props.isError !== prevProps.isError) {
             this.setState({
                 isError: this.props.isError
             })
@@ -35,7 +35,7 @@ class Preview extends React.Component {
 
     render() {
         return (
-            this.state.isError == true 
+            this.state.isError === true 
             ? <NotFoundPage />  :
             this.state.examInfo == null ? null :
             <React.Fragment>

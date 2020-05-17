@@ -43,7 +43,7 @@ class Part3 extends React.Component {
                 displayExam: true
             })
         }
-        if (this.props.playingChoukaiAudio != null && this.props.playingChoukaiAudio != prevProps.playingChoukaiAudio) {
+        if (this.props.playingChoukaiAudio != null && this.props.playingChoukaiAudio !== prevProps.playingChoukaiAudio) {
             this.playAudio(`${process.env.REACT_APP_RESOURCE_DOMAIN}/${this.props.playingChoukaiAudio}`)
         }
     }
@@ -140,7 +140,7 @@ class Part3 extends React.Component {
         let value = target.value;
         let answerIndexList = this.state.answerIndexList;
         _.remove(answerIndexList, answerItem => {
-            return answerItem.index == parseInt(name)
+            return answerItem.index === parseInt(name)
         })
         let temp = _.sortBy([...answerIndexList,
         {
@@ -180,8 +180,8 @@ class Part3 extends React.Component {
 
     render() {
         return (
-            this.state.hasError == true ? <Redirect to="/" /> :
-                this.state.displayExam == true
+            this.state.hasError === true ? <Redirect to="/" /> :
+                this.state.displayExam === true
                     ?
                     <div className={styles.container}>
                         <Modal onComplete={this.onComplete} />

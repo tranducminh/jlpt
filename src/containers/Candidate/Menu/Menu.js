@@ -35,7 +35,7 @@ class Menu extends React.Component {
                                         <NavLink to={process.env.REACT_APP_PATH_PROFILE}>
                                             <div className={styles.profile}>
                                                 <div className={styles.avt}>
-                                                    <img src={this.props.userInfo.avatar}></img>
+                                                    {/* <img src={this.props.userInfo.avatar} alt="logo"></img> */}
                                                 </div>
 
                                             </div>
